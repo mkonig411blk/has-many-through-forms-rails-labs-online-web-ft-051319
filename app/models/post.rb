@@ -10,6 +10,6 @@ class Post < ActiveRecord::Base
        self.post_categories.build(category: category)
      end
    end
-   # what is this achieving?
+   # this is here instead of accepts_nested_attributes_for :categories because we don't want users to create duplicate categories
 
 end
